@@ -1,0 +1,68 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://img.freepik.com/free-photo/textile-valentines-day-hearts-pink_1220-3680.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: brown;
+}
+
+/* First screen section */
+.hero {
+    height: 100vh; /* Full screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* Question text */
+.intro-page {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    margin: 20px;
+    color: brown;
+}
+
+/* Down arrows */
+.arrows {
+    font-size: 40px;
+    margin-top: 30px;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+/* Bottom section (requires scrolling) */
+.bottom {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Valentine Button */
+.valentine {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    padding: 20px 70px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #ff4d6d, #ff99ac);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.valentine:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #e60039, #ff758f);
+}
