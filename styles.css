@@ -1,0 +1,19 @@
+.intro-page {
+    color: #FF0000;
+    font-family: "Freestyle Script", cursive;
+    text-align: center;
+    font-size: 40px;
+}
+
+.yes{
+    background-color: #0b4520;
+    color: #ffffff;
+    font-family: "Freestyle Script", cursive;
+    text-align: center;
+    font-size: 20px;
+}
+
+.question4u {
+    width: 100px;
+    height: 100px;
+}
