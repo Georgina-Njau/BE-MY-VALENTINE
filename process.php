@@ -1,5 +1,5 @@
 <?php
-// Database credentials
+
 $host = "localhost";
 $username = "root";
 $password = "";
@@ -19,7 +19,7 @@ $lname = $_POST['lname'];
 $answer = $_POST['answer'];
 $comments = $_POST['comments'];
 
-// Prepare SQL statement (prevents SQL injection)
+// Prepare SQL statement
 $stmt = $conn->prepare("INSERT INTO submissions (fname, lname, answer, comments) VALUES (?, ?, ?, ?)");
 $stmt->bind_param("ssss", $fname, $lname, $answer, $comments);
 
@@ -34,3 +34,4 @@ if ($stmt->execute()) {
 $stmt->close();
 $conn->close();
 ?>
+
